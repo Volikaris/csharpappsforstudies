@@ -1,6 +1,7 @@
 # csharpappsforstudies
 
 Those apps were made as a task in WPF we had to do. Made them in one day, hopefully - bugless. 
+In each folder go to bin>debug> for an .exe file to preview the app.
 
 
 Zad 1. 
