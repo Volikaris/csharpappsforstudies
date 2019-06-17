@@ -1,0 +1,31 @@
+﻿<Window x:Class="Zad4.UserView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Użytkownik" Width="341" SizeToContent="Height">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Margin="3">Imię</Label>
+        <Label Margin="3" Grid.Row="1">Nazwisko</Label>
+        <Label Margin="3" Grid.Row="2">Email</Label>
+        <TextBox x:Name="fName1" Margin="3" Grid.Column="1" TextChanged="FName1_TextChanged"/>
+        <TextBox x:Name="lName1" Margin="3" Grid.Column="1" Grid.Row="1" TextChanged="LName1_TextChanged"/>
+        <TextBox x:Name="eMail1" Margin="3" Grid.Column="1" Grid.Row="2" TextChanged="EMail1_TextChanged"/>
+        <Grid HorizontalAlignment="Center" Grid.ColumnSpan="2" Grid.Row="3" Grid.IsSharedSizeScope="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition SharedSizeGroup="pierwsza" />
+                <ColumnDefinition SharedSizeGroup="pierwsza" />
+            </Grid.ColumnDefinitions>
+            <Button x:Name="closeButton" Margin="44,0,44,6" Padding="20, 5" IsCancel="True" Click="Zamknij" Grid.ColumnSpan="2">Zamknij</Button>
+        </Grid>
+    </Grid>
+</Window>
+

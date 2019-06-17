@@ -1,0 +1,15 @@
+D:\Microsoft VS\Workspace\Zad3\bin\Debug\Zad3.exe.config
+D:\Microsoft VS\Workspace\Zad3\bin\Debug\Zad3.exe
+D:\Microsoft VS\Workspace\Zad3\bin\Debug\Zad3.pdb
+D:\Microsoft VS\Workspace\Zad3\obj\Debug\Zad3.csprojAssemblyReference.cache
+D:\Microsoft VS\Workspace\Zad3\obj\Debug\MainWindow.g.cs
+D:\Microsoft VS\Workspace\Zad3\obj\Debug\App.g.cs
+D:\Microsoft VS\Workspace\Zad3\obj\Debug\Zad3_MarkupCompile.cache
+D:\Microsoft VS\Workspace\Zad3\obj\Debug\Zad3_MarkupCompile.lref
+D:\Microsoft VS\Workspace\Zad3\obj\Debug\MainWindow.baml
+D:\Microsoft VS\Workspace\Zad3\obj\Debug\Zad3.g.resources
+D:\Microsoft VS\Workspace\Zad3\obj\Debug\Zad3.Properties.Resources.resources
+D:\Microsoft VS\Workspace\Zad3\obj\Debug\Zad3.csproj.GenerateResource.cache
+D:\Microsoft VS\Workspace\Zad3\obj\Debug\Zad3.csproj.CoreCompileInputs.cache
+D:\Microsoft VS\Workspace\Zad3\obj\Debug\Zad3.exe
+D:\Microsoft VS\Workspace\Zad3\obj\Debug\Zad3.pdb

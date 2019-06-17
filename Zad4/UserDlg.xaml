@@ -1,0 +1,31 @@
+﻿<Window x:Class="Zad4.UserDlg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Użytkownik" Width="341" SizeToContent="Height">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Margin="3">Imię</Label>
+        <Label Margin="3" Grid.Row="1">Nazwisko</Label>
+        <Label Margin="3" Grid.Row="2">Email</Label>
+        <TextBox x:Name="fName1" Margin="3" Grid.Column="1"/>
+        <TextBox x:Name="lName1" Margin="3" Grid.Column="1" Grid.Row="1"/>
+        <TextBox x:Name="eMail1" Margin="3" Grid.Column="1" Grid.Row="2"/>
+        <Grid HorizontalAlignment="Center" Grid.ColumnSpan="2" Grid.Row="3" Grid.IsSharedSizeScope="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition SharedSizeGroup="pierwsza" />
+                <ColumnDefinition SharedSizeGroup="pierwsza" />
+            </Grid.ColumnDefinitions>
+            <Button Margin="3" Padding="20, 5" IsDefault="True" Click="OK">Ok</Button>
+            <Button Margin="3" Padding="20, 5" IsCancel="True" Grid.Column="1" Click="Anuluj">Anuluj</Button>
+        </Grid>
+    </Grid>
+</Window>
