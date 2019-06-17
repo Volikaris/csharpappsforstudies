@@ -1,0 +1,15 @@
+D:\Microsoft VS\Workspace\Zad2\bin\Debug\Zad2.exe.config
+D:\Microsoft VS\Workspace\Zad2\bin\Debug\Zad2.exe
+D:\Microsoft VS\Workspace\Zad2\bin\Debug\Zad2.pdb
+D:\Microsoft VS\Workspace\Zad2\obj\Debug\MainWindow.g.cs
+D:\Microsoft VS\Workspace\Zad2\obj\Debug\App.g.cs
+D:\Microsoft VS\Workspace\Zad2\obj\Debug\Zad2_MarkupCompile.cache
+D:\Microsoft VS\Workspace\Zad2\obj\Debug\Zad2_MarkupCompile.lref
+D:\Microsoft VS\Workspace\Zad2\obj\Debug\MainWindow.baml
+D:\Microsoft VS\Workspace\Zad2\obj\Debug\Zad2.g.resources
+D:\Microsoft VS\Workspace\Zad2\obj\Debug\Zad2.Properties.Resources.resources
+D:\Microsoft VS\Workspace\Zad2\obj\Debug\Zad2.csproj.GenerateResource.cache
+D:\Microsoft VS\Workspace\Zad2\obj\Debug\Zad2.csproj.CoreCompileInputs.cache
+D:\Microsoft VS\Workspace\Zad2\obj\Debug\Zad2.exe
+D:\Microsoft VS\Workspace\Zad2\obj\Debug\Zad2.pdb
+D:\Microsoft VS\Workspace\Zad2\obj\Debug\Zad2.csprojAssemblyReference.cache

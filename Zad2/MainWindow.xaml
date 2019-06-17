@@ -1,0 +1,53 @@
+﻿<Window x:Class="Zad2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zad2"
+        mc:Ignorable="d"
+        Title="PizzeriaMammaMia" Height="450" Width="580" MinHeight="450" MinWidth="580">
+    <Grid Margin="0,0,2,0">
+        <Grid Height="70" Margin="10,10,10,0" VerticalAlignment="Top" ShowGridLines="True" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+            <ComboBox x:Name="daneZam2" Height="23" Margin="145,10,80,0" VerticalAlignment="Top" KeyDown="DaneZam2_KeyDown" IsEditable="True"/>
+            <Button x:Name="czyscDane" Content="Wyczyść" HorizontalAlignment="Right" Margin="0,10,0,0" VerticalAlignment="Top" Width="75" Height="23"/>
+            <ComboBox x:Name="nazwaPizzy" Height="23" Margin="145,39,80,0" VerticalAlignment="Top" KeyDown="DaneZam2_KeyDown" IsEditable="True"/>
+            <Button x:Name="czyscPizza" Content="Wyczyść" HorizontalAlignment="Right" Margin="0,39,0,0" VerticalAlignment="Top" Width="75" Height="23"/>
+            <Label Content="Dane zamawiającego:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="130" Height="23" BorderBrush="Black" Padding="2" BorderThickness="0"/>
+            <Label Content="Pizza:" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" Width="130" Height="23" Padding="2" BorderBrush="Black"/>
+            <Grid Height="142" Margin="0,67,0,-139" VerticalAlignment="Top" HorizontalAlignment="Center">
+                <GroupBox Header="Wybierz spód" Height="114" VerticalAlignment="Top" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Margin="0,0,330,0">
+                    <Grid Height="104" VerticalAlignment="Top" Width="218" Margin="0,0,-2,-12">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <RadioButton x:Name="rButton1" Content="zwykły spód" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" GroupName="wyborSpodu"/>
+                        <RadioButton x:Name="rButton2" Content="ultracienki spód" HorizontalAlignment="Left" Margin="0,30,0,0" VerticalAlignment="Top" GroupName="wyborSpodu"/>
+                        <RadioButton x:Name="rButton3" Content="gruby spód" HorizontalAlignment="Left" Margin="0,50,0,0" VerticalAlignment="Top" GroupName="wyborSpodu"/>
+                        <RadioButton x:Name="rButton4" Content="specjalny podwójnie gruby spód" HorizontalAlignment="Left" Margin="0,70,0,0" VerticalAlignment="Top" GroupName="wyborSpodu"/>
+                    </Grid>
+                </GroupBox>
+                <GroupBox Header="Wybierz dodatki" Height="114" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Margin="225,0,0,0">
+                    <Grid Height="90" Margin="0,0,-2,0" VerticalAlignment="Top">
+                        <CheckBox x:Name="dodSer" Content="Dodatkowy ser" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                        <CheckBox x:Name="dodSos" Content="Sos" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top"/>
+                        <CheckBox x:Name="dodNap" Content="Napoje chłodzące" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top"/>
+                        <TextBox x:Name="dodSer2" Height="23" Margin="132,8,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+                        <TextBox x:Name="dodSos2" Height="23" Margin="132,36,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+                        <TextBox x:Name="dodNap2" Height="23" Margin="132,64,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+                    </Grid>
+                </GroupBox>
+                <Button x:Name="dodZam" Content="Dodaj do zamówienia" HorizontalAlignment="Right" Margin="0,119,0,0" VerticalAlignment="Top" Width="135" Height="23"/>
+                <Button x:Name="zapiszPlik" Content="Zapisz do pliku" HorizontalAlignment="Right" Margin="0,119,140,0" VerticalAlignment="Top" Width="100" Height="23" Click="ZapiszPlik_Click"/>
+                <Button x:Name="wczytajPlik" Content="Wczytaj z pliku" HorizontalAlignment="Right" Margin="0,119,245,0" VerticalAlignment="Top" Width="100" Height="23" Click="WczytajPlik_Click"/>
+                <Button x:Name="wyczyscPlik" Content="Wyczysc plik zamow." HorizontalAlignment="Right" Margin="0,119,350,0" VerticalAlignment="Top" Width="120" Height="23" Click="WyczyscPlik_Click"/>
+                <Button x:Name="usunZam" Content="Wyczysc" HorizontalAlignment="Right" Margin="0,119,475,0" VerticalAlignment="Top" Click="UsunZam_Click" Height="23" Width="65"/>
+            </Grid>
+        </Grid>
+        <Grid Margin="10,225,0,10">
+            <TextBox x:Name="poleZam" Margin="0,0,10,38" TextWrapping="Wrap" Text="" VerticalScrollBarVisibility="Auto" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Bottom" AcceptsReturn="True" IsReadOnly="True"/>
+            <Button x:Name="wyczyscWszystko" Content="Skasuj wszystko" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Click="WyczyscWszystko_Click" Width="102" Height="23"/>
+            <Button x:Name="wysZam" Content="OK" HorizontalAlignment="Right" Margin="0,0,117,10" VerticalAlignment="Bottom" Click="ZapiszPlik_Click" Width="60" Height="23"/>
+        </Grid>
+
+    </Grid>
+</Window>

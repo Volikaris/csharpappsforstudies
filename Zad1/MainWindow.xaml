@@ -1,0 +1,28 @@
+﻿<Window x:Class="Zad1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zad1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="print1" Content="Print Stack" HorizontalAlignment="Left" Margin="50,50,0,0" VerticalAlignment="Top" Width="75" Height="23"/>
+        <Button x:Name="push1" Content="Push" HorizontalAlignment="Left" Margin="50,93,0,0" VerticalAlignment="Top" Width="75" Height="23"/>
+        <Button x:Name="pop1" Content="Pop" HorizontalAlignment="Left" Margin="50,136,0,0" VerticalAlignment="Top" Width="75" Height="23"/>
+        <Button x:Name="top1" Content="Top" HorizontalAlignment="Left" Margin="50,265,0,0" VerticalAlignment="Top" Width="75" Height="23"/>
+        <Button x:Name="clear1" Content="Clear" HorizontalAlignment="Left" Margin="50,179,0,0" VerticalAlignment="Top" Width="75" Height="23"/>
+        <Button x:Name="total1" Content="Total Items" HorizontalAlignment="Left" Margin="50,222,0,0" VerticalAlignment="Top" Width="75" Height="23"/>
+        <TextBox x:Name="push2" HorizontalAlignment="Left" Height="23" Margin="130,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" Padding="2"/>
+        <Label x:Name="print2" Margin="130,136,0,0" Height="195" Width="600" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" VerticalAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <Label.Content>
+                <ScrollViewer Width="590" Height="185" Padding="0">
+                    <AccessText Name="print2a" TextWrapping="WrapWithOverflow" Text="" ScrollViewer.CanContentScroll="True"/>
+                </ScrollViewer>
+            </Label.Content>
+        </Label>
+        <Button x:Name="empty1" Content="Is Empty?" HorizontalAlignment="Left" Margin="50,308,0,0" VerticalAlignment="Top" Width="75" Height="23"/>
+
+
+    </Grid>
+</Window>
